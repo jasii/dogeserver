@@ -3,8 +3,13 @@ Doge / Nut server set up using lsiobase/alpine.python3:3.8.
 If you're familiar with linuxserver.io images this is for you.
 
 ### Getting Started
-Copy your keys.txt file into "doge/nut/conf/" volume
+First make a `/doge` folder you are going to mount to.
+Make a `/nut` folder inside of doge.
+Make a `/conf` folder inside of nut, so that you have `/doge/nut/conf/` directories.
 
+Copy your keys.txt file into `/doge/nut/conf/`
+Copy your configured doge.config.json file into the `/doge`
+Map your volumes with the docker create script.
 
     docker create
     --name DogeServer
