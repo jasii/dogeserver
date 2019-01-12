@@ -3,28 +3,29 @@ Doge / Nut server set up using lsiobase/alpine.python3:3.8.
 If you're familiar with linuxserver.io images this is for you.
 
 ### Getting Started
-First make a `/doge` folder you are going to mount to.
-Make a `/nut` folder inside of doge.
-Make a `/conf` folder inside of nut, so that you have `/doge/nut/conf/` directories.
+- First make a `/doge` folder you are going to mount to.
 
-Copy your keys.txt file into `/doge/nut/conf/`
-Copy your configured doge.config.json file into the `/doge`
-Map your volumes with the docker create script.
+- Make a `/nut` folder inside of doge.
+- Make a `/conf` folder inside of nut, so that you have `/doge/nut/conf/` directories.
 
-    docker create
-    --name DogeServer
-    -v </path/to/doge/doge.config.json:/doge/doge.config.json
-    -v </path/to/doge/data>:/doge/data
-    -v </path/to/nsp>:/nsp
-    -v </path/to/doge/nut/conf>:/doge/nut/conf
-    -v </path/to/doge/nut/conf/keys.txt>:/doge/nut/keys.txt
-    -v </path/to/doge/nut/titledb>:/doge/nut/titledb
-    -v </path/to/doge/nut/switch>:/doge/nut/switch
-    -v </path/to/titles>:/doge/nut/titles
-    -e PGID=1000 -e PUID=1000 
-    -p 6093:6093
-    -p 9000:9000
-    jojojoseph/dogeserver
+- Copy your keys.txt file into `/doge/nut/conf/`
+- Copy your configured doge.config.json file into the `/doge`
+- Map your volumes with the docker create script.
+
+        docker create
+        --name DogeServer
+        -v </path/to/doge/doge.config.json:/doge/doge.config.json
+        -v </path/to/doge/data>:/doge/data
+        -v </path/to/nsp>:/nsp
+        -v </path/to/doge/nut/conf>:/doge/nut/conf
+        -v </path/to/doge/nut/conf/keys.txt>:/doge/nut/keys.txt
+        -v </path/to/doge/nut/titledb>:/doge/nut/titledb
+        -v </path/to/doge/nut/switch>:/doge/nut/switch
+        -v </path/to/titles>:/doge/nut/titles
+        -e PGID=1000 -e PUID=1000 
+        -p 6093:6093
+        -p 9000:9000
+        jojojoseph/dogeserver
 
 
 If you need to get into the container and perform commands you can do so with
