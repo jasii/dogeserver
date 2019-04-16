@@ -3,6 +3,7 @@
 Doge / Nut server set up using lsiobase/alpine.python3:3.8. 
 If you're familiar with linuxserver.io images this is for you.
 https://github.com/wowsuchdoge/doge/
+https://github.com/blawar/nut
 
 ### Getting Started
 - First make a `/doge` folder you are going to mount to.
