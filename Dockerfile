@@ -8,6 +8,8 @@ RUN git clone https://github.com/wowsuchdoge/doge . && \
     cp doge.config.default.json doge.config.json && \
     chown abc:abc doge.config.json
 RUN git clone https://github.com/blawar/nut ./nut && \
+    cd ./nut
+    git checkout -q ad853c8ba773f2814317c570321b4e4ee6683393
     touch nut/keys.txt && \
     mkdir -p init/nut/conf/ && \
     cp nut/conf/* ./init/nut/conf/ && \
