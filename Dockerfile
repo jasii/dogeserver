@@ -3,7 +3,7 @@ WORKDIR /doge
 RUN apk add nodejs --update-cache -X http://dl-3.alpinelinux.org/alpine/edge/main/ --allow-untrusted
 RUN pip3 install --upgrade pip && \
     pip3 install colorama pyopenssl requests tqdm unidecode image bs4 urllib3 flask
-RUN git clone https://github.com/wowsuchdoge/doge . && \
+RUN git clone https://github.com/jasii/doge . && \
     mkdir -p data && \
     cp doge.config.default.json doge.config.json && \
     chown abc:abc doge.config.json
