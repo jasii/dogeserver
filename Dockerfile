@@ -7,7 +7,7 @@ RUN git clone https://github.com/jasii/doge . && \
     mkdir -p data && \
     cp doge.config.default.json doge.config.json && \
     chown abc:abc doge.config.json
-RUN git clone https://github.com/jasii/nut ./nut && \
+RUN git clone https://github.com/blawar/nut ./nut && \
     touch nut/keys.txt && \
     mkdir -p init/nut/conf/ && \
     cp nut/conf/* ./init/nut/conf/ && \
