@@ -2,7 +2,7 @@ FROM lsiobase/alpine.python3:3.8
 WORKDIR /doge
 RUN apk add nodejs --update-cache -X http://dl-3.alpinelinux.org/alpine/edge/main/ --allow-untrusted
 RUN pip3 install --upgrade pip && \
-    pip3 install colorama pyopenssl requests tqdm unidecode Pillow BeautifulSoup4 urllib3 Flask pyusb pyqt5 google-api-python-client google-auth-oauthlib
+    pip3 install colorama pyopenssl requests tqdm unidecode Pillow BeautifulSoup4 urllib3 Flask google-api-python-client google-auth-oauthlib
 RUN git clone https://github.com/jasii/doge . && \
     mkdir -p data && \
     cp doge.config.default.json doge.config.json && \
