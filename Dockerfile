@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python3:3.8
+FROM lsiobase/python:3.8
 WORKDIR /doge
 RUN apk add nodejs --update-cache -X http://dl-3.alpinelinux.org/alpine/edge/main/ --allow-untrusted
 RUN pip3 install --upgrade pip && \
