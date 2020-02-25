@@ -1,4 +1,4 @@
-lsiobase/alpine
+FROM lsiobase/alpine
 WORKDIR /doge
 # This hack is widely applied to avoid python printing issues in docker containers.
 # See: https://github.com/Docker-Hub-frolvlad/docker-alpine-python3/pull/13
