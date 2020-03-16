@@ -4,8 +4,8 @@ WORKDIR /doge
 # See: https://github.com/Docker-Hub-frolvlad/docker-alpine-python3/pull/13
 ENV PYTHONUNBUFFERED=1
 
-RUN apt install nodejs
 RUN apt-get update
+RUN apt-get install nodejs
 RUN apt-get python3 python3-pyqt5 libusb python3-pip
 RUN pip3 install --upgrade pip && \
     pip3 install colorama pyopenssl requests tqdm unidecode Pillow BeautifulSoup4 urllib3 Flask google-api-python-client google-auth-oauthlib
