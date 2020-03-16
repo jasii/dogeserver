@@ -5,8 +5,8 @@ WORKDIR /doge
 ENV PYTHONUNBUFFERED=1
 
 RUN apt-get update
-RUN apt-get install nodejs
-RUN apt-get python3 python3-pyqt5 libusb python3-pip
+RUN apt-get -y install nodejs
+RUN apt-get -y python3 python3-pyqt5 libusb python3-pip
 RUN pip3 install --upgrade pip && \
     pip3 install colorama pyopenssl requests tqdm unidecode Pillow BeautifulSoup4 urllib3 Flask google-api-python-client google-auth-oauthlib
 RUN git clone https://github.com/jasii/doge . && \
