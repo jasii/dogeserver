@@ -9,7 +9,7 @@ ENV PYTHONUNBUFFERED=1
 COPY pip.txt pip.txt
 RUN  pip3 install -r pip.txt 
 
-RUN git clone https://github.com/jasii/doge . && \
+RUN git clone https://github.com/jasii/doge ./doge && \
     mkdir -p data && \
     cp doge.config.default.json doge.config.json && \
     chown abc:abc doge.config.json
