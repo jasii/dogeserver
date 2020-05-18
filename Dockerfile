@@ -6,7 +6,7 @@ WORKDIR /doge
 # See: https://github.com/Docker-Hub-frolvlad/docker-alpine-python3/pull/13
 ENV PYTHONUNBUFFERED=1
 
-COPY ./pip.txt pip.txt
+COPY pip.txt pip.txt
 RUN  pip3 install -r /pip.txt 
 
 RUN git clone https://github.com/jasii/doge . && \
