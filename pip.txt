@@ -7,3 +7,7 @@ image
 bs4
 urllib3
 flask
+Pillow
+BeautifulSoup4
+google-api-python-client
+google-auth-oauthlib
