@@ -7,7 +7,7 @@ WORKDIR /doge
 ENV PYTHONUNBUFFERED=1
 
 COPY pip.txt pip.txt
-RUN  pip3 install -r /pip.txt 
+RUN  pip3 install -r pip.txt 
 
 RUN git clone https://github.com/jasii/doge . && \
     mkdir -p data && \
